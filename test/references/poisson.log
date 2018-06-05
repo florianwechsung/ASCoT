@@ -1,0 +1,6 @@
+DG1(?)
+[1;37;32mDiscretization family is: Stable.[0m
+
+InfSupCollection: gamma_h
+values = 	 [0.38115, 0.20568, 0.15086, 0.13396, 0.1255]
+rates = 	 [0.89, 0.447, 0.171, 0.0941]

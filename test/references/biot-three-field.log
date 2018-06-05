@@ -1,0 +1,20 @@
+epsilon = 1: [1;37;32mDiscretization family is: Stable.[0m 
+InfSupCollection: gamma_h
+values = 	 [0.66842, 0.6668, 0.6661, 0.66571, 0.66546]
+rates = 	 [0.0035, 0.00259, 0.00203, 0.0017]
+epsilon = 0.01: [1;37;32mDiscretization family is: Stable.[0m 
+InfSupCollection: gamma_h
+values = 	 [0.59205, 0.58966, 0.58916, 0.58898, 0.58889]
+rates = 	 [0.00584, 0.00209, 0.00107, 0.000649]
+epsilon = 0.0001: [1;37;32mDiscretization family is: Stable.[0m 
+InfSupCollection: gamma_h
+values = 	 [0.37046, 0.41362, 0.41602, 0.41617, 0.41622]
+rates = 	 [-0.159, -0.0143, -0.00122, -0.000557]
+epsilon = 1e-06: [1;37;32mDiscretization family is: Stable.[0m 
+InfSupCollection: gamma_h
+values = 	 [0.34924, 0.33295, 0.3308, 0.33134, 0.333]
+rates = 	 [0.0689, 0.016, -0.00563, -0.0225]
+epsilon = 0: [1;37;32mDiscretization family is: Stable.[0m 
+InfSupCollection: gamma_h
+values = 	 [0.34902, 0.332, 0.3286, 0.32741, 0.32686]
+rates = 	 [0.0721, 0.0253, 0.0127, 0.00758]

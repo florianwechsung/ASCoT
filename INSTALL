@@ -1,0 +1,8 @@
+To install ASCoT, type
+
+    sudo python setup.py install
+
+This will install ASCoT in the default Python path of your system,
+
+The installation script requires the Python module distutils.  Other
+dependencies are listed in the file README.

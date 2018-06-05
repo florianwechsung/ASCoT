@@ -1,0 +1,24 @@
+
+Mixed<Vector<2 x CG2(?)>, CG2(?), Vector<2 x DG0(?)>>
+[1;37;32mDiscretization family is: Stable.[0m
+InfSupCollection: gamma_h
+values = 	 [0.16156, 0.15727, 0.15475, 0.15596, 0.15566]
+rates = 	 [0.0388, 0.0398, -0.0269, 0.00839]
+
+Mixed<<Vector<2 x CG1(?)> + Vector<2 x B3(?)>>, CG2(?), Vector<2 x DG0(?)>>
+[1;37;32mDiscretization family is: Stable.[0m
+InfSupCollection: gamma_h
+values = 	 [0.25801, 0.26066, 0.26016, 0.25978, 0.25952]
+rates = 	 [-0.0148, 0.00473, 0.00512, 0.00458]
+
+Mixed<Vector<2 x CG1(?)>, <CG1(?) + B3(?)>, Vector<2 x CG1(?)>>
+[1;37;31mDiscretization family is: Unstable. Decaying. [0m
+InfSupCollection: gamma_h
+values = 	 [0.35372, 0.3379, 0.36432, 0.30967, 0.35744]
+rates = 	 [0.066, -0.186, 0.565, -0.643]
+
+Mixed<Vector<2 x CG2(?)>, <CG2(?) + B3(?)>, Vector<2 x CG1(?)>>
+[1;37;32mDiscretization family is: Stable.[0m
+InfSupCollection: gamma_h
+values = 	 [0.18872, 0.16456, 0.1575, 0.15431, 0.15197]
+rates = 	 [0.198, 0.108, 0.0711, 0.0684]

@@ -1,0 +1,41 @@
+
+ASCoT: Automated Stability Condition Tester
+-------------------------------------------
+
+  ASCoT tests the inf-sup stability of a family of finite element
+  discretizations for a given variational form.
+
+  For further information about ASCoT, please check out the demos in
+  the 'demo' subdirectory. More documentation will be added at a later
+  point in history.
+
+Dependencies:
+-------------
+
+  1. Python, version 2.6
+
+  2. The latest version of DOLFIN with PyDOLFIN and SLEPc enabled.
+
+
+License:
+--------
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+
+Disclaimer:
+-----------
+
+  Use ASCoT at your own risk. I do not take any resposibility for
+  bridges falling down or similar incidents.
+
+
+
+
+----------------------------
+Marie Rognes (meg@simula.no)
+Nov 9 2009
+

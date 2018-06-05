@@ -1,0 +1,20 @@
+Degree "0" invalid for "Lagrange" finite element.
+Degree "0" invalid for "Lagrange" finite element.
+Degree "0" invalid for "Lagrange" finite element.
+Degree "0" invalid for "Lagrange" finite element.
+
+Number of stable elements: 13
+These are: 
+Mixed<Vector<2 x CG2(?)>, CG1(?)>
+Mixed<Vector<2 x CG3(?)>, CG1(?)>
+Mixed<Vector<2 x CG3(?)>, CG2(?)>
+Mixed<Vector<2 x CG4(?)>, CG1(?)>
+Mixed<Vector<2 x CG4(?)>, CG2(?)>
+Mixed<Vector<2 x CG4(?)>, CG3(?)>
+Mixed<Vector<2 x CG2(?)>, DG0(?)>
+Mixed<Vector<2 x CG3(?)>, DG0(?)>
+Mixed<Vector<2 x CG3(?)>, DG1(?)>
+Mixed<Vector<2 x CG4(?)>, DG0(?)>
+Mixed<Vector<2 x CG4(?)>, DG1(?)>
+Mixed<Vector<2 x CG4(?)>, DG2(?)>
+Mixed<Vector<2 x CG4(?)>, DG3(?)>

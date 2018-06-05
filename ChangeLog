@@ -1,0 +1,12 @@
+1.2.0 [2013-04-03]
+- Update to DOLFIN 1.2+
+- Add two new demos: shallow water and Reisser-Mindling
+- Update to new DOLFIN (0.9.10) interface for SLEPcEigenSolver
+0.8.0 [2010-10-18]
+- Added demo for Hodge Laplacian
+- Allow prescribing essential boundary conditions
+- Require SLEPc version >= 3.1 by using "target magnitude" in spectrum.
+- Added demo for Biot poroelasticity model.
+- Minor bug fix for standard eigenvalue problems
+0.1.0 [2009-12-15]
+ - First stable release of the automated stability condition tester

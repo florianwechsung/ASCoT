@@ -1,0 +1,9 @@
+Mixed<Vector<2 x CG1(?)>, CG1(?)>
+[1;37;31mDiscretization family is: Unstable. Singular. Decaying. [0m
+
+InfSupCollection: beta_h
+singularities = [2, 2, 2, 2, 2]
+reduced = 	 [0.56032, 0.35682, 0.24822, 0.18929, 0.15251]
+rates = 	 [0.651, 0.895, 0.942, 0.968]
+
+Empty InfSupCollection: alpha_h
