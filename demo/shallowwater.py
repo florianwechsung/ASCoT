@@ -8,14 +8,18 @@ from ascot import *
 set_log_level(WARNING)
 
 # Shallow-water
-def c((u, p), (v, q)):
+def c(xxx_todo_changeme, xxx_todo_changeme1):
+    (u, p) = xxx_todo_changeme
+    (v, q) = xxx_todo_changeme1
     return (-u[1]*v[0] + u[0]*v[1] + div(v)*p + div(u)*q)*dx
 
 # Poisson
 #def c((u, p), (v, q)):
 #    return (dot(u, v) + div(v)*p + div(u)*q)*dx
 
-def m((u, p), (v, q)):
+def m(xxx_todo_changeme2, xxx_todo_changeme3):
+    (u, p) = xxx_todo_changeme2
+    (v, q) = xxx_todo_changeme3
     return (dot(u, v) + div(u)*div(v)
             + p*q)*dx
 
@@ -27,9 +31,9 @@ W_hs = [FunctionSpace(mesh, "RT", 1) * FunctionSpace(mesh, "DG", 0)
 
 # Test stability
 result = test_stability(c, m, W_hs)
-print W_hs[0].ufl_element().shortstr()
-print result
+print(W_hs[0].ufl_element().shortstr())
+print(result)
 for condition in result.conditions:
-    print
-    print condition
+    print()
+    print(condition)
 

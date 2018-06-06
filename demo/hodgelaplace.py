@@ -16,12 +16,16 @@ Vs = [FunctionSpace(mesh, "CG", 2) * FunctionSpace(mesh, "N1curl", 2)
       for mesh in meshes]
 
 # Define bilinear form
-def a((sigma, u), (tau, v)):
+def a(xxx_todo_changeme, xxx_todo_changeme1):
+    (sigma, u) = xxx_todo_changeme
+    (tau, v) = xxx_todo_changeme1
     return (- sigma*tau + dot(grad(tau), u)
             + dot(grad(sigma), v) + rot(u)*rot(v))*dx
 
 # Define inner product on mixed space
-def m((sigma, u), (tau, v)):
+def m(xxx_todo_changeme2, xxx_todo_changeme3):
+    (sigma, u) = xxx_todo_changeme2
+    (tau, v) = xxx_todo_changeme3
     return (sigma*tau + dot(grad(sigma), grad(tau))
             + dot(u, v) + rot(u)*rot(v))*dx
 
@@ -33,8 +37,8 @@ bcs = [DirichletBC(V, Constant((0.0, 0.0, 0.0)), "on_boundary")
 result = test_stability(a, m, spaces=Vs, bcs=bcs)
 
 # Print result
-print result
+print(result)
 
 # Print info about conditions tested and values
 for condition in result.conditions:
-    print condition
+    print(condition)

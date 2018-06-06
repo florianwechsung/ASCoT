@@ -15,13 +15,17 @@ def biot_three_field(epsilon):
     epsilon = Constant(epsilon)
     lamda = 1.0
 
-    def a((v,q,s), (u,p,r)):
+    def a(xxx_todo_changeme, xxx_todo_changeme1):
+        (v,q,s) = xxx_todo_changeme
+        (u,p,r) = xxx_todo_changeme1
         constitutive = dot(v, u) + lamda*div(v)*div(u) + inner(grad(v), grad(u))
         return (constitutive + div(v)*p
                 + q*div(u) + q*div(r)
                 + epsilon*div(s)*p + dot(s, r))*dx
 
-    def inner_product((v,q,s), (u,p,r)):
+    def inner_product(xxx_todo_changeme2, xxx_todo_changeme3):
+        (v,q,s) = xxx_todo_changeme2
+        (u,p,r) = xxx_todo_changeme3
         return (inner(v, u) + inner(grad(v), grad(u))
                 + q*p
                 + inner(s, r) + epsilon*div(s)*div(r))*dx
@@ -47,7 +51,7 @@ epsilons = [1.0, 1.e-2, 1.e-4, 1.e-6, 0.0]
 
 for epsilon in epsilons:
     result = test_stability(*biot_three_field(epsilon), spaces=spaces)
-    print "epsilon = %g: %s " % (epsilon, str(result))
+    print("epsilon = %g: %s " % (epsilon, str(result)))
     for condition in result.conditions:
-        print condition
+        print(condition)
 

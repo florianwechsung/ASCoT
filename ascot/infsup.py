@@ -41,7 +41,7 @@ def filter_values(values, operator):
     values = values[where(is_nonzero)]
 
     # Apply operator (sqrt) if indicated
-    values = array(map(operator, values))
+    values = array(list(map(operator, values)))
 
     # Sort values
     values.sort()
@@ -164,9 +164,9 @@ class InfSupCollection:
         s = "InfSupCollection: %s" % self.label
         if self.is_singular():
 
-            (singularities, reduced) = zip(*((c.singularities(),
+            (singularities, reduced) = list(zip(*((c.singularities(),
                                               c.reduced_constant())
-                                             for c in self.constants))
+                                             for c in self.constants)))
             s += "\nsingularities = %s" % formatted_list(singularities, "%d")
             s += "\nreduced = \t %s" % formatted_list(reduced, "%0.5g")
 
@@ -213,8 +213,8 @@ class StabilityResult:
         if ascot_parameters["only_stable"]:
             return RED % s
 
-        (singular, decaying) = zip(*((c.is_singular(), c.decays())
-                                     for c in self.conditions))
+        (singular, decaying) = list(zip(*((c.is_singular(), c.decays())
+                                     for c in self.conditions)))
         if any(singular):
             s += "Singular. "
         if any(decaying):

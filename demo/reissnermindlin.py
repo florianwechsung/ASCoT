@@ -22,8 +22,10 @@ def reissner_mindlin(t):
     # Stabilised Reissner-Mindlin problem
     # Arnold and Brezzi, Boundary Value Problems for Partial Differential Equations and Applications,
     # 1993, 289-292
-    def a((theta, z_3, gamma), (eta, y_3, psi)):
+    def a(xxx_todo_changeme, xxx_todo_changeme1):
         # Small strain operator
+        (theta, z_3, gamma) = xxx_todo_changeme
+        (eta, y_3, psi) = xxx_todo_changeme1
         e = lambda theta: 0.5*(grad(theta) + grad(theta).T)
         # Bending operator
         L = lambda e: ((1 - nu)*e + nu*tr(e)*Identity(2))
@@ -36,7 +38,9 @@ def reissner_mindlin(t):
                 - t**2/(1.0 - alpha*t**2)*inner(gamma, psi))*dx
 
     # WARNING: Norm not bounded for t=0 (due to boundary layers)
-    def inner_product((theta, z_3, gamma), (eta, y_3, psi)):
+    def inner_product(xxx_todo_changeme2, xxx_todo_changeme3):
+        (theta, z_3, gamma) = xxx_todo_changeme2
+        (eta, y_3, psi) = xxx_todo_changeme3
         return (inner(theta, eta) + inner(grad(theta), grad(eta))
                 + inner(z_3, y_3) + inner(grad(z_3), grad(y_3))
                 + t**2*inner(gamma, psi))*dx
@@ -77,7 +81,7 @@ for family, family_name in zip(families, family_names):
            for space in spaces]
 
     result = test_stability(*reissner_mindlin(0.001), spaces=spaces, bcs=bcs)
-    print "\n%s\n%s" % (spaces[0].ufl_element().shortstr(), str(result))
+    print("\n%s\n%s" % (spaces[0].ufl_element().shortstr(), str(result)))
     for condition in result.conditions:
-        print condition
+        print(condition)
 

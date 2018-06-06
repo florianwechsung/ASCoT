@@ -56,13 +56,14 @@ def _test_babuska_stability(c, m, spaces, bcs=None):
     # Return stability result
     return gamma_hs
 
-def _test_brezzi_stability((a, b), (m_V, m_Q), spaces, bcs=None):
+def _test_brezzi_stability(xxx_todo_changeme, xxx_todo_changeme1, spaces, bcs=None):
     """
     For given forms a and b and inner products m_V and m_Q and
     discretization spaces parameterized over a mesh family, check
     compute the Brezzi infsup and coercivity constants
     """
-
+    (a, b) = xxx_todo_changeme
+    (m_V, m_Q) = xxx_todo_changeme1
     info("Testing Brezzi stability")
 
     if bcs is None:

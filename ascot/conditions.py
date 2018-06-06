@@ -15,14 +15,13 @@ from ascot.parameters import ascot_parameters
 __all__ = ["compute_brezzi_infsup", "compute_brezzi_coercivity",
            "compute_babuska_infsup"]
 
-def compute_brezzi_infsup(b, (m, n), W, bc=None):
+def compute_brezzi_infsup(b, xxx_todo_changeme, W, bc=None):
     """
     For a given form b: V x Q \rightarrow \R and inner products m and
     n defining V and Q respectively and a function space W = V_h x
     Q_h, compute the Brezzi inf-sup constant.
     """
-
-    # Define forms for eigenproblem
+    (m, n) = xxx_todo_changeme
     (u, p) = TrialFunctions(W)
     (v, q) = TestFunctions(W)
     lhs = m(v, u) + b(v, p) + b(u, q)
@@ -36,14 +35,13 @@ def compute_brezzi_infsup(b, (m, n), W, bc=None):
     eigenvalues = EigenProblem(lhs, rhs, params, bc).solve(num)
     return InfSupConstant(W.mesh().hmax(), eigenvalues, operator=sqrt)
 
-def compute_brezzi_coercivity((a, b), m, W, bc=None):
+def compute_brezzi_coercivity(xxx_todo_changeme1, m, W, bc=None):
     """
     For given forms a: V x V \rightarrow \R and b: V x Q \rightarrow
     \R and an inner product m defining V and a function space W =
     V_h x Q_h, compute the Brezzi coercivity constant.
     """
-
-    # Define forms for eigenproblem
+    (a, b) = xxx_todo_changeme1
     (u, p) = TrialFunctions(W)
     (v, q) = TestFunctions(W)
     lhs = a(v, u) + b(v, p) + b(u, q)

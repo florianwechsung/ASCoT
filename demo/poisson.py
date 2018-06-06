@@ -48,8 +48,8 @@ ascot_parameters["check_continuity"] = True
 
 # Test stability
 result = test_stability(_a, H1_dg, W_hs)
-print W_hs[0].ufl_element().shortstr()
-print result
+print(W_hs[0].ufl_element().shortstr())
+print(result)
 for condition in result.conditions:
-    print
-    print condition
+    print()
+    print(condition)

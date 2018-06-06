@@ -22,8 +22,8 @@ W_hs = [VectorFunctionSpace(mesh, "CG", 1) * FunctionSpace(mesh, "CG", 1)
 
 # Test stability
 result = test_stability((a, b), inners, W_hs)
-print W_hs[0].ufl_element().shortstr()
-print result
+print(W_hs[0].ufl_element().shortstr())
+print(result)
 for condition in result.conditions:
-    print
-    print condition
+    print()
+    print(condition)

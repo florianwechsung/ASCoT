@@ -11,7 +11,7 @@ set_log_level(WARNING)
 b = lambda v, q: div(v)*q*dx
 
 # Construct a family of mixed function spaces
-meshsizes = range(2, 10, 2)
+meshsizes = list(range(2, 10, 2))
 meshes = [UnitSquareMesh(n, n) for n in meshsizes]
 
 # Generate spaces
@@ -31,8 +31,8 @@ for W_hs in spaces:
     if result.is_stable():
         stable_elements += [W_hs[0].ufl_element()]
 
-print
-print "Number of stable elements: %d" % len(stable_elements)
-print "These are: "
+print()
+print("Number of stable elements: %d" % len(stable_elements))
+print("These are: ")
 for element in stable_elements:
-    print element.shortstr()
+    print(element.shortstr())

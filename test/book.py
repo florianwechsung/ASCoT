@@ -25,10 +25,10 @@ def case1():
 
     result = test_stability((a, b), (Hdiv, L2), W_hs)
 
-    print W_hs[0].ufl_element()
-    print result
+    print(W_hs[0].ufl_element())
+    print(result)
     for condition in result.conditions:
-        print condition
+        print(condition)
 
 def case2():
 
@@ -45,10 +45,10 @@ def case2():
 
     result = test_stability((a, b), (Hdiv, L2), W_hs)
 
-    print W_hs[0].ufl_element()
-    print result
+    print(W_hs[0].ufl_element())
+    print(result)
     for condition in result.conditions:
-        print condition
+        print(condition)
 
 def case3():
 
@@ -65,10 +65,10 @@ def case3():
 
     result = test_stability((a, b), (Hdiv, L2), W_hs)
 
-    print W_hs[0].ufl_element()
-    print result
+    print(W_hs[0].ufl_element())
+    print(result)
     for condition in result.conditions:
-        print condition
+        print(condition)
 
 def case4():
 
@@ -85,10 +85,10 @@ def case4():
 
     result = test_stability((a, b), (Hdiv, L2), W_hs)
 
-    print W_hs[0].ufl_element()
-    print result
+    print(W_hs[0].ufl_element())
+    print(result)
     for condition in result.conditions:
-        print condition
+        print(condition)
 
 def case5():
     meshsizes = [2, 4, 6, 8, 10]
@@ -111,11 +111,11 @@ def case5():
         if result.is_stable():
             stable_elements += [W_hs[0].ufl_element()]
 
-    print
-    print "Number of stable elements: %d" % len(stable_elements)
-    print "These are: "
+    print()
+    print("Number of stable elements: %d" % len(stable_elements))
+    print("These are: ")
     for element in stable_elements:
-        print element.shortstr()
+        print(element.shortstr())
 
 if __name__ == "__main__":
 

@@ -8,7 +8,7 @@ if __name__ == "__main__":
     clean_output(output_dir)
 
     tests = [f for f in os.listdir("../demo/") if f.endswith(".py")]
-    print "Found %d tests" % len(tests)
+    print("Found %d tests" % len(tests))
 
     # Step into output directory
     os.chdir(output_dir)
